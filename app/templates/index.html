@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmeRate - Avaliações de Filmes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_index.css') }}">
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Descubra os Melhores Filmes Avaliados pela Comunidade</h2>
+                <p>Explore resenhas, dê sua opinião e encontre sua próxima maratona!</p>
+                <button onclick="scrollToSection('avaliacoes')">Ver Avaliações</button>
+            </div>
+        </section>
+
+        <section id="avaliacoes" class="avaliacoes">
+            <div class="container">
+                <h3>Últimas Avaliações</h3>
+                <div id="movie-list">
+                    <!-- Os filmes avaliados aparecerão aqui -->
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h3>Sobre Nós</h3>
+                <p>FilmeRate é um site feito para apaixonados por cinema, onde você pode encontrar avaliações, dar notas e compartilhar suas opiniões sobre seus filmes favoritos.</p>
+            </div>
+    </main>
+
+    {% include 'footer.html' %}
+
+    <script src="{{ url_for('static', filename='script_index.js')}}"></script>
+</body>
+</html>

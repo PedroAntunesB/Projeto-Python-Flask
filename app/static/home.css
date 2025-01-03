@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.perfil-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.perfil-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-dados h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.bio {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.estatisticas {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.estatisticas span {
+    font-size: 1.1rem;
+}
+
+.btn-editar {
+    background: #f90;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn-editar:hover {
+    background: #d77b00;
+}
+
+.postagens h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.postagem img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Estilos para os botões */
+.botoes-acoes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.botoes-acoes a {
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn-logout {
+    background: #e74c3c;
+}
+
+.btn-logout:hover {
+    background: #c0392b;
+}
+
+.btn-principal {
+    background: #3498db;
+}
+
+.btn-principal:hover {
+    background: #2980b9;
+}
+
+.btn-config {
+    background: #2ecc71;
+}
+
+.btn-config:hover {
+    background: #27ae60;
+}
+
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
